@@ -111,7 +111,7 @@ time.sleep(2)
 
 # Publish to the same topic in a loop forever
 loopCount = 0
-while True:
+while loopCount < 1:
     if args.mode == 'both' or args.mode == 'publish':
         message = {}
         message['message'] = args.message
@@ -122,3 +122,5 @@ while True:
             print('Published topic %s: %s\n' % (topic, messageJson))
         loopCount += 1
     time.sleep(1)
+
+print('Done!')
