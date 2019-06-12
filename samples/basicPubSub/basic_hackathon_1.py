@@ -20,6 +20,7 @@ import logging
 import time
 import argparse
 import json
+import datetime
 
 AllowedActions = ['both', 'publish', 'subscribe']
 
@@ -114,8 +115,9 @@ loopCount = 0
 while loopCount < 1:
     if args.mode == 'both' or args.mode == 'publish':
         message = {}
-        message['message'] = args.message
+        message['message'] = 'The Curiosity Code'
         message['sequence'] = loopCount
+        message['timestamp'] = str(datetime.now())
         messageJson = json.dumps(message)
         myAWSIoTMQTTClient.publish(topic, messageJson, 1)
         if args.mode == 'publish':
