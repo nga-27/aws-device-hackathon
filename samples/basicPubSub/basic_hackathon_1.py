@@ -117,7 +117,7 @@ while loopCount < 1:
         message = {}
         message['message'] = 'The Curiosity Code'
         message['sequence'] = loopCount
-        message['timestamp'] = str(datetime.now())
+        message['timestamp'] = str(datetime.datetime.now())
         messageJson = json.dumps(message)
         myAWSIoTMQTTClient.publish(topic, messageJson, 1)
         if args.mode == 'publish':

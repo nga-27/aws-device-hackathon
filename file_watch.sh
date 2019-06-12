@@ -18,4 +18,4 @@ fi
 
 # run pub/sub sample app using certificates downloaded in package
 printf "\nRunning pub/sub sample application...\n"
-python ~/Desktop/aws-device-hackathon/samples/basicPubSub/basic_hackathon_1.py -e a26y2sst8zk5bt-ats.iot.us-east-1.amazonaws.com -r ~/Desktop/root-CA.crt -c ~/Desktop/e11f9f12f1.cert.pem -k ~/Desktop/e11f9f12f1.private.key
+python3 ~/Desktop/aws-device-hackathon/samples/basicPubSub/basic_hackathon_1.py -e a26y2sst8zk5bt-ats.iot.us-east-1.amazonaws.com -r ~/Desktop/root-CA.crt -c ~/Desktop/e11f9f12f1.cert.pem -k ~/Desktop/e11f9f12f1.private.key
