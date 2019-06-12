@@ -8,7 +8,7 @@ if [ ! -f ~/Desktop/root-CA.crt ]; then
 fi
 
 # install AWS Device SDK for Python if not already installed
-if [ ! -d ./aws-device-hackathon ]; then
+if [ ! -d ~/Desktop/aws-device-hackathon ]; then
   printf "\nInstalling AWS SDK...\n"
   git clone https://github.com/nga-27/aws-device-hackathon.git
   pushd aws-device-hackathon
